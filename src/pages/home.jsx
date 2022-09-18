@@ -1,9 +1,15 @@
 import React from "react";
-import { Text, TouchableOpacity, View, StyleSheet } from "react-native";
+import {
+  Text,
+  TouchableOpacity,
+  View,
+  StyleSheet,
+  ScrollView,
+} from "react-native";
 
 export default function Home({ navigation }) {
   return (
-    <View style={style.container}>
+    <ScrollView style={style.container}>
       <View>
         <TouchableOpacity
           style={style.login_button}
@@ -23,7 +29,7 @@ export default function Home({ navigation }) {
           <Text style={style.signup_buttontxt}>Signin</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 const style = StyleSheet.create({
