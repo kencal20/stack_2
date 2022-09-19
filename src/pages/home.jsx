@@ -9,7 +9,7 @@ import {
 
 export default function Home({ navigation }) {
   return (
-    <ScrollView style={style.container}>
+    <View style={style.container}>
       <View>
         <TouchableOpacity
           style={style.login_button}
@@ -29,7 +29,7 @@ export default function Home({ navigation }) {
           <Text style={style.signup_buttontxt}>Signin</Text>
         </TouchableOpacity>
       </View>
-    </ScrollView>
+    </View>
   );
 }
 const style = StyleSheet.create({
@@ -37,8 +37,8 @@ const style = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     backgroundColor: "#fff",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
   },
   login_button: {
     backgroundColor: "purple",
@@ -59,5 +59,7 @@ const style = StyleSheet.create({
   },
   signup_buttontxt: {
     color: "black",
+    fontWeight: "bold",
+    fontStyle: "italic",
   },
 });
