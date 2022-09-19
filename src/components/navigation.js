@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Home from "../pages/home";
 import Signin from "../pages/signin";
 import Login from "../pages/login";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, TouchableOpacity } from "react-native";
 
 const Stack = createStackNavigator();
 
@@ -24,14 +24,22 @@ export default function Navigation() {
           name="Signin"
           component={Signin}
           options={{
-            headerRight: () => <Text style={style.rightheader}>kenneth</Text>,
+            headerRight: () => (
+              <TouchableOpacity style={style.rightheader}>
+                <Text style={style.rightheadertxt}>kenneth</Text>,
+              </TouchableOpacity>
+            ),
           }}
         />
         <Stack.Screen
           name="Login"
           component={Login}
           options={{
-            headerRight: () => <Text style={style.rightheader}>kenneth</Text>,
+            headerRight: () => (
+              <TouchableOpacity style={style.rightheader}>
+                <Text style={style.rightheadertxt}>kenneth</Text>,
+              </TouchableOpacity>
+            ),
           }}
         />
       </Stack.Navigator>
@@ -40,6 +48,17 @@ export default function Navigation() {
 }
 const style = StyleSheet.create({
   rightheader: {
-    marginHorizontal:30
+    position:'absolute',
+    top:26,
+    right:20
+
+
+   
+  },
+  rightheadertxt: {
+    color: "#fff",
+    fontSize:15,
+    fontWeight:'bold'
+   
   },
 });
