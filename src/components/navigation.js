@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Home from "../pages/home";
 import Signin from "../pages/signin";
 import Login from "../pages/login";
-import { Text } from "react-native";
+import { Text, StyleSheet } from "react-native";
 
 const Stack = createStackNavigator();
 
@@ -38,3 +38,8 @@ export default function Navigation() {
     </NavigationContainer>
   );
 }
+const style = StyleSheet.create({
+  rightheader: {
+    marginHorizontal:30
+  },
+});
