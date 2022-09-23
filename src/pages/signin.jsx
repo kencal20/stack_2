@@ -14,20 +14,61 @@ export default function Signin({ navigation }) {
       <Text style={style.header}>Signin</Text>
       <View style={style.fillin}>
         <View style={style.fillin_column1}>
-          <Text style={style.label}>first name</Text>
-          <TextInput style={style.input} Required />
-          <Text style={style.label}>last name</Text>
-          <TextInput style={style.input} Required />
-          <Text style={style.label}>password</Text>
-          <TextInput style={style.input} Required />
+          <Text style={style.label}>First name</Text>
+          <TextInput
+            style={style.input}
+            placeholder="first name"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            Required
+          />
+          <Text style={style.label}>Last name</Text>
+          <TextInput
+            style={style.input}
+            placeholder="last name"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            Required
+          />
+          <Text style={style.label}>Password</Text>
+          <TextInput
+            style={style.input}
+            placeholder="password"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            secureTextEntry={true}
+            Required
+          />
         </View>
         <View style={style.fillin_column2}>
-          <Text style={style.label}>email</Text>
-          <TextInput style={style.input} Required />
-          <Text style={style.label}>Username</Text>
-          <TextInput style={style.input} Required />
-          <Text style={style.label}>confirm password</Text>
-          <TextInput style={style.input} Required />
+          <Text style={style.label}>Email</Text>
+          <TextInput style={style.input} 
+           placeholder="email"
+           autoCapitalize="none"
+           autoComplete="off"
+           autoCorrect={false}
+          Required />
+          <Text style={style.label}>Username
+          </Text>
+          <TextInput style={style.input} 
+           placeholder="username"
+           autoCapitalize="none"
+           autoComplete="off"
+           autoCorrect={false}
+          Required />
+          <Text style={style.label}>Confirm password</Text>
+          <TextInput
+            style={style.input}
+            placeholder="password"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            secureTextEntry={true}
+            Required
+          />
         </View>
         <View style={style.signup_button}>
           <TouchableOpacity>
@@ -73,10 +114,10 @@ const style = StyleSheet.create({
   fillin_column2: {
     position: "relative",
     bottom: 200,
-    left: 170,
+    left: 160,
   },
   label: {
-    fontWeight: 300,
+    fontWeight: "bold",
     fontSize: 14,
     marginVertical: 5,
   },
@@ -84,7 +125,8 @@ const style = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     height: 40,
-    width: 100,
+    width: 120,
+    
   },
   signup_button: {
     backgroundColor: "purple",
