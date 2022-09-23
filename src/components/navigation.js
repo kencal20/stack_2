@@ -23,24 +23,12 @@ export default function Navigation() {
         <Stack.Screen
           name="Signin"
           component={Signin}
-          options={{
-            headerRight: () => (
-              <TouchableOpacity style={style.rightheader}>
-                <Text style={style.rightheadertxt}>kenneth</Text>,
-              </TouchableOpacity>
-            ),
-          }}
+       
         />
         <Stack.Screen
           name="Login"
           component={Login}
-          options={{
-            headerRight: () => (
-              <TouchableOpacity style={style.rightheader}>
-                <Text style={style.rightheadertxt}>kenneth</Text>,
-              </TouchableOpacity>
-            ),
-          }}
+       
         />
       </Stack.Navigator>
     </NavigationContainer>
