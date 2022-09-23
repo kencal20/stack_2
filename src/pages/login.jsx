@@ -14,10 +14,25 @@ export default function Login({ navigation }) {
       <Text style={style.header}>Login</Text>
       <View style={style.fillin}>
         <View style={style.fillin_column1}>
-          <Text style={style.label}>first name</Text>
-          <TextInput style={style.input} />
-          <Text style={style.label}>last name</Text>
-          <TextInput style={style.input} />
+          <Text style={style.label}>Username</Text>
+          <TextInput
+            style={style.input}
+            placeholder="username"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            Required
+          />
+          <Text style={style.label}>Password</Text>
+          <TextInput
+            style={style.input}
+            placeholder="password"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            secureTextEntry={true}
+            Required
+          />
         </View>
         <View>
           <TouchableOpacity style={style.login_button}>
