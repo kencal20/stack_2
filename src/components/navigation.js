@@ -48,17 +48,13 @@ export default function Navigation() {
 }
 const style = StyleSheet.create({
   rightheader: {
-    position:'absolute',
-    top:26,
-    right:20
-
-
-   
+    position: "absolute",
+    top: 26,
+    right: 20,
   },
   rightheadertxt: {
     color: "#fff",
-    fontSize:15,
-    fontWeight:'bold'
-   
+    fontSize: 15,
+    fontWeight: "bold",
   },
 });
