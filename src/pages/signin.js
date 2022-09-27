@@ -50,7 +50,7 @@ export default function Signin({ navigation }) {
            autoCapitalize="none"
            autoComplete="off"
            autoCorrect={false}
-          Required />
+          Required />s
           <Text style={style.label}>Username
           </Text>
           <TextInput style={style.input} 
