@@ -17,7 +17,6 @@ export default function Login({ navigation }) {
           <Text style={style.label}>Username</Text>
           <TextInput
             style={style.input}
-            placeholder="username"
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect={false}
@@ -26,7 +25,6 @@ export default function Login({ navigation }) {
           <Text style={style.label}>Password</Text>
           <TextInput
             style={style.input}
-            placeholder="password"
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect={false}
@@ -83,7 +81,7 @@ const style = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     height: 40,
-    width: 250,
+    width: 180,
   },
   login_button: {
     backgroundColor: "purple",
