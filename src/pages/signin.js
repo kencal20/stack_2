@@ -17,7 +17,6 @@ export default function Signin({ navigation }) {
           <Text style={style.label}>First name</Text>
           <TextInput
             style={style.input}
-            placeholder="first name"
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect={false}
@@ -26,7 +25,6 @@ export default function Signin({ navigation }) {
           <Text style={style.label}>Last name</Text>
           <TextInput
             style={style.input}
-            placeholder="last name"
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect={false}
@@ -35,7 +33,6 @@ export default function Signin({ navigation }) {
           <Text style={style.label}>Password</Text>
           <TextInput
             style={style.input}
-            placeholder="password"
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect={false}
@@ -45,24 +42,24 @@ export default function Signin({ navigation }) {
         </View>
         <View style={style.fillin_column2}>
           <Text style={style.label}>Email</Text>
-          <TextInput style={style.input} 
-           placeholder="email"
-           autoCapitalize="none"
-           autoComplete="off"
-           autoCorrect={false}
-          Required />s
-          <Text style={style.label}>Username
-          </Text>
-          <TextInput style={style.input} 
-           placeholder="username"
-           autoCapitalize="none"
-           autoComplete="off"
-           autoCorrect={false}
-          Required />
+          <TextInput
+            style={style.input}
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            Required
+          />
+          <Text style={style.label}>Username</Text>
+          <TextInput
+            style={style.input}
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect={false}
+            Required
+          />
           <Text style={style.label}>Confirm password</Text>
           <TextInput
             style={style.input}
-            placeholder="password"
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect={false}
@@ -126,7 +123,6 @@ const style = StyleSheet.create({
     borderRadius: 10,
     height: 40,
     width: 120,
-    
   },
   signup_button: {
     backgroundColor: "purple",
